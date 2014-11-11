@@ -13,6 +13,7 @@ Contents:
 
    installation
    development
+   general
    align
 
 

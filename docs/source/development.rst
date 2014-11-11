@@ -2,7 +2,7 @@ Development
 ===========
 
 The ``asr`` toolkit is developed by Martin Thoma. The development began in
-May 2014.
+November 2014.
 
 It is developed on GitHub: https://github.com/MartinThoma/asr
 
