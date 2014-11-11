@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""asr, the Python handwriting recognition toolkit, is a set of executable
+   scripts and Python modules that are useful for handwriting recognition.
+"""
+
+
+import argparse
+
+# asr modules
+import asr
+from asr import align
+
+# Ever ASR tool that should be available through
+#   asr TOOL
+# has to be added to ``get_parser()`` and to ``main``.
+
+
+def get_parser():
+    """Return the parser object for this script."""
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     prog='asr')
+    subparsers = parser.add_subparsers(dest='cmd')
+    subparsers.add_parser('align',
+                          add_help=False,
+                          description="align",
+                          parents=[align.get_parser()])
+    parser.add_argument('--version',
+                        action='version',
+                        version=('asr %s' % str(asr.__version__)))
+    return parser
+
+
+def main(args):
+    if args.cmd == 'align':
+        align.main(args.s1, args.s2)
+
+if __name__ == '__main__':
+    args = get_parser().parse_args()
+    main(args)
