@@ -1,5 +1,5 @@
 docs:
-	python setup.py upload_docs --upload-dir docs/_build/html
+	python setup.py upload_docs --upload-dir docs/build/html
 
 update:
 	python setup.py sdist upload
