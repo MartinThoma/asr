@@ -5,7 +5,7 @@ except ImportError:
 
 config = {
     'name': 'asr',
-    'version': '0.1.2',
+    'version': '0.1.3',
     'author': 'Martin Thoma',
     'author_email': 'info@martin-thoma.de',
     'packages': ['asr'],
@@ -14,15 +14,12 @@ config = {
     'url': 'https://github.com/MartinThoma/asr',
     'license': 'MIT',
     'description': 'Automatic Speech Recognition (ASR) tools',
-    'long_description': """Tools for ASR""",
+    'long_description': ("Tools for automatic speech recognition (ASR)."
+                         "See http://pythonhosted.org/asr/ for the "
+                         "documentation."),
     'install_requires': [
         # "argparse",
-        # "theano",
-        # "nose",
-        # "natsort",
-        # "PyYAML",
-        # "matplotlib",
-        # "shapely"
+        # "theano"
     ],
     'keywords': ['ASR', 'recognition', 'speech'],
     'download_url': 'https://github.com/MartinThoma/asr',

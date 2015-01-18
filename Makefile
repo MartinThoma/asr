@@ -2,7 +2,7 @@ docs:
 	python setup.py upload_docs --upload-dir docs/build/html
 
 update:
-	python setup.py sdist upload
+	python setup.py sdist upload --sign
 	sudo pip install asr --upgrade
 
 test:
