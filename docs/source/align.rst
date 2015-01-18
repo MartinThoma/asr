@@ -17,3 +17,6 @@ defined as
       -h, --help  show this help message and exit
       -s1 S1      sequence 1
       -s2 S2      sequence 2
+
+.. automodule:: asr.align
+   :members:

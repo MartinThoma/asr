@@ -8,7 +8,7 @@ def calculate_wer(reference, hypothesis):
     """
         Calculation of WER with Levenshtein distance.
         Works only for iterables up to 254 elements (uint8).
-        O(nm) time ans space complexity.
+        O(nm) time and space complexity.
 
         >>> calculate_wer("who is there".split(), "is there".split())
         1

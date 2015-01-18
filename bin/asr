@@ -12,7 +12,7 @@ import argparse
 import asr
 from asr import align
 
-# Ever ASR tool that should be available through
+# Every ASR tool that should be available through
 #   asr TOOL
 # has to be added to ``get_parser()`` and to ``main``.
 
